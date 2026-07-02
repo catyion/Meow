@@ -1,3 +1,5 @@
+# this readme is ai generated to just make it easier to explain rn. also name is placeholder just for example purposes
+
 # Vault
 
 Minimal Roblox Luau DataStore profile module.
