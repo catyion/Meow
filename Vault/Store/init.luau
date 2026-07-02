@@ -6,7 +6,7 @@ local Defaults = require('./Defaults')
 local Types = require('./Types')
 
 type Store<T> = Types.Store<T>
-type StoreConfig<T> = Types.StoreConfig<T>
+type Config<T> = Types.Config<T>
 type Settings = Types.Settings
 type Options = Types.Options
 
@@ -27,7 +27,7 @@ local function BuildSettings(options: Options?): Settings
     return result
 end
 
-function Public.new<T>(config: StoreConfig<T>): Store<T>
+function Public.new<T>(config: Config<T>): Store<T>
     local self = setmetatable({}, Store)
 
     self._name = config.name
