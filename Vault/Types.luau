@@ -77,7 +77,7 @@ export type Settings = {
 
 export type Options = Partial<Settings>
 
-export type StoreConfig<T> = {
+export type Config<T> = {
 	name: string,
 	template: T,
 	version: number,
